@@ -1,4 +1,4 @@
-USE bamazon_db;
+USE bamazon_DB;
 
 INSERT INTO products(product_name, department_name, price, stock_qty)
 VALUES ("tent", "outdoors", 98.47, 25 );
