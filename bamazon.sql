@@ -39,4 +39,4 @@ INSERT INTO products(product_name, department_name, price, stock_qty)
 VALUES ("cooking utensils", "housewares", 24.99, 87);
 
 INSERT INTO products(product_name, department_name, price, stock_qty)
-VALUES ("bed linens", "houswares", 57.99, 64);
+VALUES ("linens", "houswares", 57.99, 64);
