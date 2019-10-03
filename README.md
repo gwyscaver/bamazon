@@ -6,9 +6,9 @@ Within the customer portal, you can view the inventory, choose an item you'd lik
 
 [GitHub Link](https://github.com/gwyscaver/bamazon)
 
-[Video Playback](https://drive.google.com/file/d/154aH6bM4usVApHeI4A9z0D3I6BI-1_SG/view?usp=sharing)
+[Video Playback](https://drive.google.com/file/d/1P4Zdz4Xq49lZVbaLcqdMEJ65ewJSVa0D/view?usp=sharing)
 
-![Video Tutorial](assets/images/video.jpg)
+![Video Tutorial](assets/images/bamazon.jpg)
 
 
 
