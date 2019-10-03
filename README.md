@@ -30,8 +30,8 @@ Within the customer portal, you can view the inventory, choose an item you'd lik
 # Notes
 
 ## The prompts below will accept user input:
-    1) Ask the user to enter the product ID number they would like to purchase.
-    2) Ask the user how many units of the product they would like to purchase.
+    1) ? Enter Product ID Number:
+    2) ? How many units would you like to purchase?
 
 ## What Each Prompt Should Do:
 
