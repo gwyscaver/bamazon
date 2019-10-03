@@ -15,66 +15,39 @@ Within the customer portal, you can view the inventory, choose an item you'd lik
 # Usage
 1. Clone repo
 2. npm install
-3. cd liri-node-app
+3. cd bamazon
 4. Please see notes below to run the app
 5. ENJOY!
 
 # Tech Used
 * NPM Dependencies
-    * dotenv
-    * node-spotify-api
-    * axios
-    * fs
-    * moment
-* API Integration
-    * Bands in Town
-    * Spotify
-    * OMDB
+    * inquirer
+    * mysql
+* Node.js
+* MySQL
+
 
 # Notes
 
-## The following commands run without user input:
-    $ node liri.js concert-this
-    $ node liri.js spotify-this-song
-    $ node liri.js movie-this
-    $ node liri.js do-what-it-says
+## The prompts below will accept user input:
+    1) Ask the user to enter the product ID number they would like to purchase.
+    2) Ask the user how many units of the product they would like to purchase.
 
-## These commands accept user input:
-    $ node liri.js spotify-this-song "ring of fire"
-    $ node liri.js movie-this "interstellar"
+## What Each Prompt Should Do:
 
-## What Each Command Should Do
+Enter Product ID Number:
+* Customer enters product id number from 1 through 10
+* Order is placed
 
-node liri.js concert-this `<upcoming concert name here>`
-* This will show the following information about the concerts in your terminal/bash window:
-* Venue Name: 
-* Venue Location: 
-* Venue Country: 
-* Venue Date: 07/01/2020 (corrected format)
 
-node liri.js spotify-this-song `<song name here>`
-* This will show the following information about the song in your terminal/bash window:
-* Artist(s)
-* The song's name
-* A preview link of the song from Spotify
-* The album that the song is from
-* if no song is provided then your program will default to
-* "The Sign" by Ace of Base
 
-node liri.js movie-this `<movie name here>`
-* This will output the following information to your terminal/bash window:
-* Title of the movie.
-* Year the movie came out.
-* IMDB Rating of the movie.
-* Country where the movie was produced.
-* Language of the movie.
-* Plot of the movie.
-* Actors in the movie.
-* Rotten Tomatoes Rating.
-* Rotten Tomatoes URL.
-* If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
-* If you haven't watched "Mr. Nobody," then you should: http://www.imdb.com/title/tt0485947/
-* It's on Netflix!
+How many units would you like to purchase?
+* Application will check Bamazon stock quantity
+* If sufficient, customer's order is placed AND
+* Total purchase price is shown back to customer THEN
+* SQL database is updated to reflect remaining quantity left
+* If insufficient quantity, customer will recieve a message to pick another item
+* Order has been prevented from going through
+* Connection ends
 
-node liri.js do-what-it-says
-* This uses the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
+
